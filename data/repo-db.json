@@ -1,0 +1,8 @@
+{
+  "repos": {
+    "wufhex": {
+      "url": "https://wufhex.github.io/waveplay/data/default-repo/lib.json",
+      "hash": "sha256:9d6165357bd5b78ef7679311e13033bcd7939b74cef4543d4a07e3913fee1b5b"
+    }
+  }
+}

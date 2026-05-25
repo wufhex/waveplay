@@ -1,0 +1,54 @@
+<div class="main-layout">
+    <div class="editor-panel">
+        <label for="formula">Bytebeat Formula</label>
+        <textarea id="formula"
+            spellcheck="false">(t * (t >> 8 | t >> 9) & 46 & t >> 8) ^ (t & t >> 13 | t >> 6)</textarea>
+        <div id="error-display" class="error-hidden">Invalid formula syntax</div>
+    </div>
+
+    <div class="controls-panel">
+        <div class="control-item">
+            <label for="frequency">Frequency (Hz)</label>
+            <div class="combo-textbox-wrapper">
+                <input type="number" id="frequency" value="8000" min="1">
+                <select id="frequencyPreset">
+                    <option value="8000">8000Hz</option>
+                    <option value="11025">11025Hz</option>
+                    <option value="16000">16000Hz</option>
+                    <option value="22050">22050Hz</option>
+                    <option value="32000">32000Hz</option>
+                    <option value="44100">44100Hz</option>
+                    <option value="48000">48000Hz</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="control-item">
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.3">
+        </div>
+
+        <div class="control-item">
+            <label for="counter-t">Time Step (t)</label>
+            <input type="number" id="counter-t" value="0" min="0">
+        </div>
+
+        <div class="control-item">
+            <label for="counter-sec">Seconds (s)</label>
+            <input type="number" id="counter-sec" value="0" min="0" step="0.001">
+        </div>
+
+        <div class="control-item">
+            <label for="mode-selector">Mode</label>
+            <select id="mode-selector">
+                <option value="bytebeat" selected>Bytebeat</option>
+                <option value="floatbeat">Floatbeat</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button id="play-btn" class="btn-primary">Play</button>
+        <button id="reset-btn" class="btn-secondary">Reset</button>
+    </div>
+</div>

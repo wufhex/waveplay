@@ -1,0 +1,58 @@
+{
+  "defaultTheme": "north",
+  "defaultEffect": "fft",
+
+  "themes": {
+    "north": {
+      "name": "Nordic",
+      "module": "https://wufhex.github.io/waveplay/js/themes/north.js",
+      "export": "NorthTheme",
+      "default": true
+    },
+    "dracula": {
+      "name": "Dracula",
+      "module": "https://wufhex.github.io/waveplay/js/themes/dracula.js",
+      "export": "DraculaTheme"
+    },
+    "solarizedDark": {
+      "name": "Solarized Dark",
+      "module": "https://wufhex.github.io/waveplay/js/themes/solarized-dark.js",
+      "export": "SolarizedDarkTheme"
+    },
+    "rosePine": {
+      "name": "Rosé Pine",
+      "module": "https://wufhex.github.io/waveplay/js/themes/rose-pine.js",
+      "export": "RosePineTheme"
+    },
+    "tokyoNight": {
+      "name": "Tokyo Night",
+      "module": "https://wufhex.github.io/waveplay/js/themes/tokyo-night.js",
+      "export": "TokyoNightTheme"
+    },
+    "gruvbox": {
+      "name": "Gruvbox Dark",
+      "module": "https://wufhex.github.io/waveplay/js/themes/gruvbox.js",
+      "export": "GruvboxTheme"
+    }
+  },
+
+  "effects": {
+    "none": {
+      "name": "None",
+      "module": "https://wufhex.github.io/waveplay/js/effects/none.js",
+      "export": "NoneEffect"
+    },
+    "fft": {
+      "name": "FFT Spectrum",
+      "module": "https://wufhex.github.io/waveplay/js/effects/fft.js",
+      "export": "FFTEffect",
+      "default": true
+    },
+    "peaks": {
+      "name": "ARCE",
+      "module": "https://wufhex.github.io/waveplay/js/effects/arce.js",
+      "export": "AudioReactorCoreEffect",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WavePlay</title>
+    <link rel="stylesheet" href="./css/waveplay.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.5.0/lz-string.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/waveplay.ico">
+</head>
+<body>
+    <div class="effect-wrapper">
+        <canvas id="effect-canvas"></canvas>
+    </div>
+
+    <div class="app-container" id="ui-overlay">
+        <header class="topbar">
+            <div>
+                <h1>WavePlay</h1>
+                <p class="subtitle">A modern customizable bytebeat interpreter! Customize effects and themes in Settings.</p>
+                <p class="subtitle el-pc-only">Press F3 to toggle UI visibility.</p>
+            </div>
+
+            <nav class="menu">
+                <button data-page="interpreter" class="btn-primary">Interpreter</button>
+                <button data-page="library" class="btn-secondary">Library</button>
+                <button data-page="settings" class="btn-secondary">Settings</button>
+            </nav>
+        </header>
+
+        <main id="content"></main>
+    </div>
+
+    <script defer type="module" src="./js/main.js"></script>
+</body>
+</html>
