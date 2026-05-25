@@ -21,9 +21,8 @@
 ## Submissions
 
 > ℹ️ All submissions must be sent as a pull request to [this repository](https://github.com/wufhex/waveplay-submissions). Any submission placed on this repository will be ignored and immediately closed.
-<br/>
-<br/>
-> Due to GitHub Pages issues, all hardcoded/static URLs in the code must be changed to relative paths. This issue will be fixed soon.
+
+**Due to GitHub Pages issues, all hardcoded/static URLs in the code must be changed to relative paths. This issue will be fixed soon.**
 
 WavePlay supports contributions in three categories:
 
