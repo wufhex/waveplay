@@ -170,12 +170,19 @@ export class InterpreterPage {
     updateFormula() {
         const compiled = Compiler.compile(
             this.el.formula.value,
-            () => this.el.error.className = "error-visible",
-            () => this.el.error.className = "error-hidden"
+            (err) => {
+                this.el.error.textContent = err.formattedMessage;
+                this.el.error.className = "error-visible";
+            },
+            () => {
+                this.el.error.textContent = "";
+                this.el.error.className = "error-hidden";
+            }
         );
 
-        if (compiled)
+        if (compiled) {
             AudioEngine.formulaFunc = compiled;
+        }
 
         this.pushURLState();
     }
