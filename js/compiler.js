@@ -4,8 +4,12 @@ export const Compiler = {
             let code = formulaStr.trim();
 
             // XSS Guard Layer
+            const codeWithoutComments = code
+                .replace(/\/\*[\s\S]*?\*\//g, "") // block comments
+                .replace(/\/\/.*$/gm, "");        // single-line comments
+
             const xssFilter = /\b(window|document|fetch|xmlhttprequest|eval|alert|prompt|confirm|cookie|storage|location|websocket|worker|import|require|globalthis|top|parent|frames|self|constructor|prototype|__proto__)\b/i;
-            if (xssFilter.test(code)) {
+            if (xssFilter.test(codeWithoutComments)) {
                 throw new Error("XSS Detected.");
             }
 
